@@ -10,5 +10,8 @@ public class Main {
 
         // Metodo prezzo totale 
         scopa.prezzoPieno();
+
+        // Metodo nome esteso
+        scopa.extendedName();
     }
 }

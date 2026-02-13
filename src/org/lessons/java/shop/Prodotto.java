@@ -32,6 +32,9 @@ public class Prodotto {
         float prezzoTotale = this.prezzo + (this.prezzo * this.iva / 100);
         System.out.printf(Locale.ITALY, "Il prezzo finale è %.2f%n", prezzoTotale);
     }
-
     
+    // Nome esteso
+    void extendedName() {
+        System.out.println(this.codice + this.nome);
+    }
 }
