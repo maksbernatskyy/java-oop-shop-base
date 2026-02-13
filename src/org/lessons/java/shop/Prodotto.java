@@ -17,4 +17,8 @@ public class Prodotto {
         this.prezzo = prezzo;
         this.iva = iva;
     }
+
+    void prezzoBase() {
+        System.out.println("Il prezzo base è " + this.prezzo);
+    }
 }
