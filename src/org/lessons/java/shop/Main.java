@@ -7,5 +7,8 @@ public class Main {
 
         // Metodo prezzo base
         scopa.prezzoBase();
+
+        // Metodo prezzo totale 
+        scopa.prezzoPieno();
     }
 }
