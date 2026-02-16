@@ -23,5 +23,9 @@ public class Main {
         // Set prezzo
         scopa.setPrezzo(new BigDecimal("100"));
         System.out.println(scopa.getPrezzo());
+
+        // Set iva
+        scopa.setIva(new BigDecimal("56"));
+        System.out.println(scopa.getIva());
     }
 }

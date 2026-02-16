@@ -58,6 +58,16 @@ public class Prodotto {
         }
     }
 
+    public BigDecimal getIva() {
+        return this.iva;
+    }
+
+    public void setIva(BigDecimal iva) {
+        if(iva.compareTo(BigDecimal.ZERO) > 0) {
+            this.iva = iva;
+        }
+    }
+
     // Prezzo base
     public void prezzoBase() {
         System.out.println("Il prezzo base è " + this.prezzo);
