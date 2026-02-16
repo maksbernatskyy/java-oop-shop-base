@@ -1,19 +1,21 @@
 package org.lessons.java.shop;
 
+import java.math.BigDecimal;
 import java.util.Locale;
 
 public class Prodotto {
     // Attributi
-    int codice;
-    String nome;
-    String descrizione;
-    Float prezzo;
-    int iva;
+    private int codice;
+    private String nome;
+    private String descrizione;
+    private BigDecimal prezzo;
+    private BigDecimal iva;
+    private static BigDecimal houndred = new BigDecimal(100);
 
     // Metodi
 
     // Constructor
-    Prodotto(String nome, String descrizione, Float prezzo, int iva) {
+    public Prodotto(String nome, String descrizione, BigDecimal prezzo, BigDecimal iva) {
 
         this.codice = (int)(Math.random() * 100000000);
         this.nome = nome;
@@ -23,18 +25,18 @@ public class Prodotto {
     }
 
     // Prezzo base
-    void prezzoBase() {
+    public void prezzoBase() {
         System.out.println("Il prezzo base è " + this.prezzo);
     }
 
     // Prezzo base + iva
-    void prezzoPieno() {
-        float prezzoTotale = this.prezzo + (this.prezzo * this.iva / 100);
+    public void prezzoPieno() {
+        BigDecimal prezzoTotale = this.prezzo.add((this.prezzo.multiply(this.iva).divide(houndred)));
         System.out.printf(Locale.ITALY, "Il prezzo finale è %.2f%n", prezzoTotale);
     }
     
     // Nome esteso
-    void extendedName() {
+    public void extendedName() {
         System.out.println(this.codice + this.nome);
     }
 }
