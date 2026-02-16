@@ -24,6 +24,10 @@ public class Prodotto {
         this.iva = iva;
     }
 
+    public int getCodice() {
+        return this.codice;
+    }
+
     public String getNome() {
         return this.nome;
     }
