@@ -34,6 +34,26 @@ public class Prodotto {
         }
     }
 
+    public String getDescrizione() {
+        return this.descrizione;
+    }
+
+    public void setDescrizione(String descrizione) {
+        if(descrizione != null && !descrizione.equals("")) {
+            this.descrizione = descrizione;
+        }
+    }
+
+    public BigDecimal getPrezzo() {
+        return this.prezzo;
+    }
+
+    public void setPrezzo(BigDecimal prezzo) {
+        if(prezzo.compareTo(BigDecimal.ZERO) > 0) {
+            this.prezzo = prezzo;
+        }
+    }
+
     // Prezzo base
     public void prezzoBase() {
         System.out.println("Il prezzo base è " + this.prezzo);

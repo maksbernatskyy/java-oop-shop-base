@@ -19,5 +19,9 @@ public class Main {
         // Change name
         scopa.setNome("Bella scopa");
         System.out.println(scopa.getNome());
+
+        // Set prezzo
+        scopa.setPrezzo(new BigDecimal("100"));
+        System.out.println(scopa.getPrezzo());
     }
 }
