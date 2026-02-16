@@ -24,6 +24,12 @@ public class Prodotto {
         this.iva = iva;
     }
 
+    public Prodotto(String nome, BigDecimal prezzo) {
+        this.codice = (int)(Math.random() * 100000000);
+        this.nome = nome;
+        this.prezzo = prezzo;
+    }
+
     public int getCodice() {
         return this.codice;
     }
