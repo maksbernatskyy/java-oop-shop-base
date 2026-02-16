@@ -24,6 +24,16 @@ public class Prodotto {
         this.iva = iva;
     }
 
+    public String getNome() {
+        return this.nome;
+    }
+
+    public void setNome(String nome) {
+        if(nome != null && !nome.equals("")) {
+            this.nome = nome;
+        }
+    }
+
     // Prezzo base
     public void prezzoBase() {
         System.out.println("Il prezzo base è " + this.prezzo);

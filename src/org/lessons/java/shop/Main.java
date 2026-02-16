@@ -15,5 +15,9 @@ public class Main {
 
         // Metodo nome esteso
         scopa.extendedName();
+
+        // Change name
+        scopa.setNome("Bella scopa");
+        System.out.println(scopa.getNome());
     }
 }
